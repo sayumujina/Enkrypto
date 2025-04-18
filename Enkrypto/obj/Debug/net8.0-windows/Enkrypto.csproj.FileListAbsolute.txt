@@ -1,0 +1,16 @@
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\bin\Debug\net8.0-windows\Enkrypto.exe
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\bin\Debug\net8.0-windows\Enkrypto.deps.json
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\bin\Debug\net8.0-windows\Enkrypto.runtimeconfig.json
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\bin\Debug\net8.0-windows\Enkrypto.dll
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\bin\Debug\net8.0-windows\Enkrypto.pdb
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\obj\Debug\net8.0-windows\Enkrypto.csproj.GenerateResource.cache
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\obj\Debug\net8.0-windows\Enkrypto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\obj\Debug\net8.0-windows\Enkrypto.AssemblyInfoInputs.cache
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\obj\Debug\net8.0-windows\Enkrypto.AssemblyInfo.cs
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\obj\Debug\net8.0-windows\Enkrypto.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\obj\Debug\net8.0-windows\Enkrypto.dll
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\obj\Debug\net8.0-windows\refint\Enkrypto.dll
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\obj\Debug\net8.0-windows\Enkrypto.pdb
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\obj\Debug\net8.0-windows\Enkrypto.genruntimeconfig.cache
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\obj\Debug\net8.0-windows\ref\Enkrypto.dll
+C:\Users\ADMIN\source\repos\Enkrypto\Enkrypto\Enkrypto\obj\Debug\net8.0-windows\Enkrypto.Enkrypto.resources
