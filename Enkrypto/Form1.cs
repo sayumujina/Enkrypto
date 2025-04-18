@@ -2,6 +2,7 @@
 using System.Windows.Forms.VisualStyles;
 using System;
 using System.Xml;
+using System.Drawing.Text;
 namespace Enkrypto
 {
     public partial class Enkrypto : Form
@@ -26,10 +27,10 @@ namespace Enkrypto
         }
 
         //Set a flag to check if the input is valid
-        public static bool IsInputValid = true;
+        private static bool IsInputValid;
 
         //
-        public static string[] Output = new string[3];
+        private static string[] Output = new string[3];
         // String processing class
         class StringProcessing
         {
@@ -41,15 +42,15 @@ namespace Enkrypto
                 // Initialize the error messages
                 string StringErrorMessage = "";
                 string IntegerErrorMessage = "";
+                IsInputValid = false;
 
                 if (InputString.Length <= 40
                     && InputString != ""
                     && InputString.All(char.IsUpper) == true
-                    // Counts 51 numbers from -25, which is the range from -25 to 25
-                    && Enumerable.Range(-25, 51).Contains(ShiftingValue))
+                    && ShiftingValue >= -25 && ShiftingValue <= 25)
                 {
                     IsInputValid = true;
-                    return (StringErrorMessage, IntegerErrorMessage);
+                    
                 }
                 else
                 {
@@ -69,7 +70,6 @@ namespace Enkrypto
                     {
                         IntegerErrorMessage = "The shifting value must be between -25 and 25.";
                     }
-                    IsInputValid = false;
                 }
                 return (StringErrorMessage, IntegerErrorMessage);
             }
@@ -177,6 +177,10 @@ namespace Enkrypto
         }
         private void DisplayOutputs(object? sender, EventArgs e)
         {
+            // Reset the error messages 
+            StringErrorLabel.Text = "";
+            IntegerErrorLabel.Text = "";
+            SubmitLabel.Text = "";
 
             // Assign the values to the variables
             InputString = StringContainer.Text;
@@ -188,14 +192,11 @@ namespace Enkrypto
             {
                 IntegerErrorLabel.Text = "Please enter a valid integer. ";
                 IsInputValid = false;
+                return;
             }
 
-            // Call the checkString function
-            StringProcessing.CheckInput(InputString, ShiftingValue);
-
-            // Reset the error messages
-            StringErrorLabel.Text = "";
-            IntegerErrorLabel.Text = "";
+            // Call the CheckInput function
+           StringProcessing.CheckInput(InputString, ShiftingValue);
 
             // If the input is invalid, return to avoid further processing
             if (IsInputValid == false)
@@ -217,7 +218,7 @@ namespace Enkrypto
             }
             else
             {
-                SubmitLabel.Text = "The input is valid.";
+                SubmitLabel.Text = "The input is valid";
                 SubmitLabel.ForeColor = System.Drawing.Color.Green;
             }
 
