@@ -29,8 +29,6 @@ namespace Enkrypto
         //Set a flag to check if the input is valid
         private static bool IsInputValid;
 
-        //
-        private static string[] Output = new string[3];
         // String processing class
         class StringProcessing
         {
