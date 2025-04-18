@@ -48,7 +48,7 @@ namespace Enkrypto
                     && ShiftingValue >= -25 && ShiftingValue <= 25)
                 {
                     IsInputValid = true;
-                    
+
                 }
                 else
                 {
@@ -146,13 +146,10 @@ namespace Enkrypto
         {
             // Starts listen to the SubmitButton button being clicked
             // Initialize the labels text
-            if (SubmitButton != null && StringContainer != null)
-            {
-                SubmitButton.Click += (sender, e) => SubmitButton_Click(sender, e);
-                this.KeyPreview = true; // Ensure the form captures key events
-                this.KeyDown += (sender, e) => IsEnterKeyDown(sender, e);
-            }
-            InputString = "";
+            SubmitButton.Click += (sender, e) => SubmitButton_Click(sender, e);
+            this.KeyPreview = true; // Ensure the form captures key events
+            this.KeyDown += (sender, e) => IsEnterKeyDown(sender, e);
+
             SubmitLabel.Text = "";
             OutputTextBox.Text = "";
             StringErrorLabel.Text = "";
@@ -194,7 +191,7 @@ namespace Enkrypto
             }
 
             // Call the CheckInput function
-           StringProcessing.CheckInput(InputString, ShiftingValue);
+            StringProcessing.CheckInput(InputString, ShiftingValue);
 
             // If the input is invalid, return to avoid further processing
             if (IsInputValid == false)
@@ -235,6 +232,5 @@ namespace Enkrypto
             // Call the sortString function 
             OutputTextBox.Text += "\r\n" + "The sorted string is: " + StringProcessing.Sort(InputString);
         }
-
     }
 }

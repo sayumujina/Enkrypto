@@ -100,7 +100,7 @@
             // 
             StringErrorLabel.Anchor = AnchorStyles.None;
             StringErrorLabel.ImageAlign = ContentAlignment.MiddleLeft;
-            StringErrorLabel.Location = new Point(248, 102);
+            StringErrorLabel.Location = new Point(248, 101);
             StringErrorLabel.Name = "StringErrorLabel";
             StringErrorLabel.Size = new Size(435, 20);
             StringErrorLabel.TabIndex = 10;
@@ -111,7 +111,7 @@
             // 
             IntegerErrorLabel.Anchor = AnchorStyles.None;
             IntegerErrorLabel.ImageAlign = ContentAlignment.MiddleLeft;
-            IntegerErrorLabel.Location = new Point(248, 163);
+            IntegerErrorLabel.Location = new Point(248, 164);
             IntegerErrorLabel.Name = "IntegerErrorLabel";
             IntegerErrorLabel.Size = new Size(435, 20);
             IntegerErrorLabel.TabIndex = 11;
@@ -134,15 +134,15 @@
             OutputTextBox.Multiline = true;
             OutputTextBox.Name = "OutputTextBox";
             OutputTextBox.ReadOnly = true;
-            OutputTextBox.Size = new Size(425, 149);
+            OutputTextBox.Size = new Size(425, 229);
             OutputTextBox.TabIndex = 14;
             // 
-            // DecipherForm
+            // Enkrypto
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientActiveCaption;
-            ClientSize = new Size(809, 450);
+            ClientSize = new Size(809, 513);
             Controls.Add(OutputTextBox);
             Controls.Add(label1);
             Controls.Add(IntegerErrorLabel);
@@ -153,7 +153,7 @@
             Controls.Add(StringLabel);
             Controls.Add(IntegerContainer);
             Controls.Add(StringContainer);
-            Name = "DecipherForm";
+            Name = "Enkrypto";
             Text = "Enkrypto";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
