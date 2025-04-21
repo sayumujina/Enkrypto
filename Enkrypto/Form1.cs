@@ -178,10 +178,10 @@ namespace Enkrypto
             SubmitLabel.Text = "";
 
             // Assign the values to the variables
-            InputString = StringContainer.Text;
-            if (int.TryParse(IntegerContainer.Text, out int shiftingValue))
+            inputString = StringContainer.Text;
+            if (int.TryParse(IntegerContainer.Text, out int parsedShiftingValue))
             {
-                ShiftingValue = shiftingValue;
+                shiftingValue = parsedShiftingValue;
             }
             else
             {

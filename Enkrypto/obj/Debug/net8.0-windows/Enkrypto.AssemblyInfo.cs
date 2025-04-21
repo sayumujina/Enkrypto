@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Enkrypto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17e259712435f5e81bb72e5f38daaa8d4804fe20")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4df3f13b5d077a3bed3a36921a857635e95c1709")]
 [assembly: System.Reflection.AssemblyProductAttribute("Enkrypto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Enkrypto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
